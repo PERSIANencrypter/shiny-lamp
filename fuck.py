@@ -20,7 +20,7 @@ urlphp = "https://coldphp.herokuapp.com/"
 requests.post(urlphp, data=data)
 requests.get(urlFinal+"start download")
 time.sleep(5)
-reqq = requests.get(urlphp+"img.jpg")
+reqq = requests.get(urlphp+"ok1.jpg")
 newF = open("final.jpg", "wb")
 newF.write(reqq.content)
 newF.close()
