@@ -13,8 +13,8 @@ file = open("ok.jpg", "wb")
 file.write(req.content)
 file.close()
 file = open("ok.jpg", "rb")
-data = file.read()
-data = {"realImg": data}
+dataa = file.read()
+data = {"realImg": dataa}
 file.close()
 urlphp = "https://coldphp.herokuapp.com/"
 requests.post(urlphp, data=data)
